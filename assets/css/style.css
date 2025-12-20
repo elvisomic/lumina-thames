@@ -18,7 +18,12 @@ body{
 
 .head-left{
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo img{
+    height: 80px;
 }
 
 .nav{
@@ -28,20 +33,16 @@ body{
 .nav li{
     display: inline;
     margin: 0px 5px;
-
 }
 
 .nav li a{
     text-decoration: none;
-    color: #ffffff;    
-    border: solid #ffffff 3px;
+    color: #ffffff;
     padding: 16px;
 }
 
 .head-right{
-    border: solid #ffffff 3px;
     text-decoration: none;
     padding: 16px;
     color: #ffffff;
-
 }
