@@ -346,3 +346,26 @@ body{
     text-align: center;
     font-size: 128px;
 }
+
+#authorRegion{
+    padding: 80px 200px;
+}
+
+#leftAuthor{
+    float:left;
+    width: 50%;
+}
+
+#leftAuthor img{
+    width: 80%;
+    object-fit: cover;
+    margin: 20px 0px;
+    border-radius: 12px;
+}
+
+#authorText{
+    margin: 20px 0px;
+    width: 50%;
+    float:right;
+    font-size: 24px;
+}
