@@ -18,7 +18,7 @@ body{
 
 .header{
     height: 100px;
-    padding: 0px 250px;
+    padding: 0px 200px;
     display: flex;
     background-color: #202020;
     align-items: center;
@@ -87,7 +87,7 @@ body{
     position: relative;
     z-index: 2;
     top: 200px;
-    left: 243px;
+    left: 193px;
 }
 
 #sectionNav li a{
@@ -109,7 +109,7 @@ body{
 
 .subheading{
     text-align: center;
-    margin: 5px 700px;
+    margin: 5px 500px;
 }
 
 #regionRooms{
@@ -117,20 +117,25 @@ body{
     align-items: center;
     justify-content: space-between;
     margin: 30px 0px 70px 0px;
-    padding: 0px 250px;
+    padding: 0px 200px;
 }
 
 .RoomContainer{
-    height: 560px;
-    width: 430px;
+    height: fit-content;
+    width: 400px;
     background-color: #ffffff;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     border-radius: 12px;
+    transition: transform 0.5s ease;
+}
+
+.RoomContainer:hover{
+    transform: scale(1.05);
 }
 
 .RoomContainer img{
     width: 100%;
-    height: 300px;
+    height: 270px;
     object-fit: cover;
     border-radius: 12px;
 }
@@ -231,4 +236,113 @@ body{
     color: #ffffff;
     bottom: 0;
     pointer-events: none;
+}
+
+#regionAmmenities{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0px 70px 0px;
+    padding: 0px 200px;
+    height: 600px;
+}
+
+.ammenitiesContainer{
+    height: fit-content;
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    transition: transform 0.5s ease;
+}
+
+.ammenitiesContainer:hover{
+    transform: scale(1.05);
+}
+
+.ammenitiesContainer img{
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.ammenitiesContainer h3{
+    margin: 10px;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.ammenitiesContainer hr{
+    margin: 10px;
+}
+
+.ammenitiesContainer p{
+    margin: 20px 10px 30px 10px;
+}
+
+.footer{
+    padding: 0px 200px;
+    height: 500px;
+    margin: 10px 0px;
+}
+
+#footerSection{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+}
+
+.footerContainer{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerContainer img{
+    max-width: 100%;
+}
+
+.address{
+    font-size: 1.4em;    
+    align-self: flex-start;
+} 
+
+#links, #sclMedia{
+    list-style-type: none;
+}
+
+#links li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.4em;
+}
+
+#sclMedia{
+    list-style-type: none;
+}
+
+#sclMedia li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.4em;
+}
+
+.sclMediaSpan{
+    font-size: 40px;
+}
+
+#sclMedia li{
+    display: inline;
+}
+
+#footerText{
+    text-align: center;
+    font-size: 128px;
 }
