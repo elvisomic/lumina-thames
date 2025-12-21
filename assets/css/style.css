@@ -72,19 +72,20 @@ body{
     overflow: hidden;
 }
 
-#overlay{
-    background-color: #000000;
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
     width: 100%;
-    opacity: 50%;
     position: absolute;
     top: 0;
+    pointer-events: none;
+    z-index: 1;
 }
 
 #sectionNav{
     list-style-type: none;
     position: relative;
-    z-index: 1;
+    z-index: 2;
     top: 200px;
     left: 243px;
 }
@@ -123,7 +124,7 @@ body{
     height: 560px;
     width: 430px;
     background-color: #ffffff;
-    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     border-radius: 12px;
 }
 
@@ -170,13 +171,16 @@ body{
 
 #gallerySection{
     display: grid;
-    height: 950px;
+    height: 920px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    margin: 0px 0px;
+    position: relative;
  }
 
  .imageSmall{
     overflow: hidden;
+    position: relative;
  }
 
 .imageSmall img{
@@ -191,6 +195,7 @@ body{
  }
 
 .imageBigLeft{
+    position: relative;
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
     background-color: #202020;
@@ -198,6 +203,7 @@ body{
 }
 
 .imageBigRight{
+    position: relative;
     grid-column: 3 / span 2;
     grid-row: 2 / span 2;
     background-color: #313131;  
@@ -213,4 +219,16 @@ body{
 
 .imageBigLeft img:hover, .imageBigRight img:hover{
     transform: scale(1.1);
+}
+
+.imageText{
+    position: absolute;
+    max-width: fit-content;
+    margin: 10px 20px;
+    font-size: 32px;
+    z-index: 2;
+    font-weight: normal;
+    color: #ffffff;
+    bottom: 0;
+    pointer-events: none;
 }
