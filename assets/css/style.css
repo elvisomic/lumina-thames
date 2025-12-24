@@ -12,9 +12,15 @@ body{
     font-family: "Mulish", sans-serif;
 }
 
-h1, h2, h3, .navFont, .roomHeading{
+h1, h2, h3, .roomHeading{
     font-family: "Epilogue", sans-serif;
     font-weight: 450;
+}
+
+.h1Heading{
+    font-weight: 550;
+    font-size: 48px;
+    margin: 45px 200px;
 }
 
 .cleaner{
@@ -25,7 +31,6 @@ h1, h2, h3, .navFont, .roomHeading{
     height: 100px;
     padding: 0px 200px;
     display: flex;
-    background-color: #202020;
     align-items: center;
     justify-content: space-between;
 }
@@ -51,7 +56,7 @@ h1, h2, h3, .navFont, .roomHeading{
 
 .nav li a{
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
     padding: 8px;
     font-size: 20px;
 }
@@ -59,7 +64,7 @@ h1, h2, h3, .navFont, .roomHeading{
 .head-right{
     text-decoration: none;
     padding: 8px;
-    color: #ffffff;
+    color: #000000;
     font-size: 20px;
 }
 
@@ -67,16 +72,39 @@ h1, h2, h3, .navFont, .roomHeading{
     font-weight: bold;
 }
 
+
 #hero {
-    background-image: url("../img/heroImage.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 820px;
-    position: relative; 
+    height: 730px; 
     overflow: hidden;
+    padding: 0px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+#heroLeft{
+    width: 50%;
+}
+
+#hero img{
+    width: 45%;
+    border-radius: 45% 12px 12px 12px;
+}
+
+#heroBTN{
+    padding:20px 24px;
+    background-color: #DDCEB9;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 20px;
+    border-radius: 12px;
+    transition: all 0.5s ease;
+}
+
+#heroBTN:hover{
+    background-color: #ada190;
+}
 .overlay{
     background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
@@ -87,11 +115,18 @@ h1, h2, h3, .navFont, .roomHeading{
     z-index: 1;
 }
 
+#mainText{
+    color: #000000;
+    font-size: 48px;
+    font-weight: 500;
+    margin: 40px 0px;
+}
+
 #sectionNav{
     list-style-type: none;
     position: relative;
     z-index: 2;
-    top: 200px;
+    top: 300px;
     left: 193px;
 }
 
@@ -99,22 +134,18 @@ h1, h2, h3, .navFont, .roomHeading{
     text-decoration: none;
     color: #ffffff;
     font-size: 96px;
-    font-weight: 700;
-}
-
-.headingSection{
-    margin: 85px 0px;
+    font-weight: 600;
 }
 
 .heading{
     text-align: center;
-    margin: 10px 0px;
+    margin: 85px 0px 0px 0px;
     font-size: 80px;
 }
 
 .subheading{
     text-align: center;
-    margin: 5px 500px;
+    margin: 5px 500px 85px 500px;
 }
 
 /* Room section - index.html */
@@ -123,7 +154,7 @@ h1, h2, h3, .navFont, .roomHeading{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 30px 0px 70px 0px;
+    margin: 30px 0px 200px 0px;
     padding: 0px 200px;
 }
 
@@ -183,14 +214,14 @@ h1, h2, h3, .navFont, .roomHeading{
 
 #gallerySection{
     display: grid;
-    height: 920px;
+    height: 1000px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     margin: 0px 0px;
     position: relative;
  }
 
- .imageSmall{
+.imageSmall{
     overflow: hidden;
     position: relative;
  }
@@ -244,9 +275,9 @@ h1, h2, h3, .navFont, .roomHeading{
     pointer-events: none;
 }
 
-/* Ammenities section */
+/* Amenities section */
 
-#regionAmmenities{
+#regionAmenities{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -255,7 +286,7 @@ h1, h2, h3, .navFont, .roomHeading{
     height: 600px;
 }
 
-.ammenitiesContainer{
+.amenitiesContainer{
     height: fit-content;
     width: 400px;
     background-color: #ffffff;
@@ -264,27 +295,27 @@ h1, h2, h3, .navFont, .roomHeading{
     transition: transform 0.5s ease;
 }
 
-.ammenitiesContainer:hover{
+.amenitiesContainer:hover{
     transform: scale(1.05);
 }
 
-.ammenitiesContainer img{
+.amenitiesContainer img{
     width: 100%;
     max-height: fit-content;
     object-fit: cover;
     border-radius: 12px;
 }
 
-.ammenitiesContainer h3{
+.amenitiesContainer h3{
     margin: 10px;
     font-size: 28px;
 }
 
-.ammenitiesContainer hr{
+.amenitiesContainer hr{
     margin: 10px;
 }
 
-.ammenitiesContainer p{
+.amenitiesContainer p{
     margin: 20px 10px 30px 10px;
 }
 
@@ -362,7 +393,7 @@ h1, h2, h3, .navFont, .roomHeading{
 /* Author page */
 
 #authorRegion, #roomRegion{
-    padding: 80px 200px;
+    padding: 20px 200px 85px 200px;
 }
 
 #leftAuthor{
@@ -385,10 +416,10 @@ h1, h2, h3, .navFont, .roomHeading{
     margin: 20px 0px;
     width: 50%;
     float:right;
-    font-size: 24px;
+    font-size: 20px;
 }
 
-/* Accommodation page */
+/* Accommodation page - rooms.html */
 
 .leftRoom{
     float:left;
@@ -427,5 +458,20 @@ h1, h2, h3, .navFont, .roomHeading{
 }
 
 .roomText{
-    margin: 20px 0px;
+    margin: 20px 0px 40px 0px;
 }
+
+.bookBTN{
+    text-decoration: none;
+    padding: 12px 50px;
+    color: #ffffff;
+    background-color: #D4AF37;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+.bookBTN:hover{
+    background-color: #B8942F;
+}
+
+/* Booking - booking.html */

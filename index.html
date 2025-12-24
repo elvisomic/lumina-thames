@@ -10,36 +10,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="icon" type="image/ico" href="assets/img/favicon.ico" />
     <title>Lumina Thames</title>
 </head>
 <body>
     <div class="header">
         <div class="head-left">
             <div class="logo">
-                <a href="#"><img src="assets/img/logoWhite.png" alt="Logo Image" /></a>
+                <a href="#"><img src="assets/img/logoBlack.png" alt="Logo Image" /></a>
             </div>
             <ul class="nav">
-                <li><a href="#" class="navFont active">HOME</a></li>
-                <li><a href="booking.html" class="navFont ">BOOKING</a></li>
-                <li><a href="rooms.html" class="navFont ">ACCOMMODATION</a></li>
-                <li><a href="author.html" class="navFont ">AUTHOR</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="booking.html" class="">Booking</a></li>
+                <li><a href="rooms.html" class="">Accommodation</a></li>
+                <li><a href="author.html" class="">Author</a></li>
             </ul>
         </div>
         <a href="#" class="head-right">ZIP DOWNLOAD</a>
     </div>
+    <hr id="headerHr" />
+
     <div id="hero">
-        <ul id="sectionNav">
-            <li><a href="#rooms">ROOMS</a></li>
-            <li><a href="#gallery">GALLERY</a></li>
-            <li><a href="#ammenities">AMMENITIES</a></li>
-        </ul>
-        <div class="overlay"></div>
+        <div id="heroLeft">
+            <h1 id="mainText">Experience luxury at Lumina Thames, a central London hotel near the Thames, Big Ben, and London Eye. Book your stay today.</h1>
+            <a href="booking.html" id="heroBTN">Book your stay</a>
+        </div>
+        <img src="assets/img/heroImage.jpg" alt="" />
     </div>
     <a href="#" id="rooms"></a>
-    <div class="headingSection">
-        <h1 class="heading">Rooms & Suites</h1>
-        <p class="subheading">Modern, comfortable rooms featuring elegant design, quality bedding, and essential amenities, offering a relaxing retreat for leisure and business travelers.</p>
-    </div>
+
+    <h2 class="heading">Rooms & Suites</h2>
+    <p class="subheading">Modern, comfortable rooms featuring elegant design, quality bedding, and essential amenities, offering a relaxing retreat for leisure and business travelers.</p>
         
     <div id="regionRooms">
         <div class="RoomContainer">
@@ -74,62 +75,63 @@
     </div>
 
     <a href="#" id="gallery"></a>
+    <h2 class="heading">Gallery</h2>
+    <p class="subheading">Discover the iconic sights and experiences around Lumina Thames Hotel, from London's historic landmarks to its famous red buses and vibrant streets.</p>
+  
     <div id="gallerySection">
         <div class="overlay"></div>
 
         <div class="imageBigLeft">
-            <img src="assets/img/bigBen.jpg" alt="">
-            <h4 class="imageText">Hear London's iconic clock chime, marking history, tradition, and timeless British identity</h4>
+            <img src="assets/img/bigBen.jpg" alt="Image of Big Ben">
+            <h3 class="imageText">Hear London's iconic clock chime, marking history, tradition, and timeless British identity</h3>
         </div>
 
         <div class="imageSmall">
-            <img src="assets/img/NHMuseum.jpg" alt="">
-            <h4 class="imageText">Wander through Earth's living history.</h4>
+            <img src="assets/img/NHMuseum.jpg" alt="Image of Natural History Museum">
+            <h3 class="imageText">Wander through Earth's living history.</h3>
         </div>
 
         <div class="imageSmall">
-            <img src="assets/img/londonBus.jpg" alt="">
-            <h4 class="imageText">Ride London's classic red icons.</h4>
+            <img src="assets/img/londonBus.jpg" alt="Image of London's Iconic Busses">
+            <h3 class="imageText">Ride London's classic red icons.</h3>
         </div>
 
         <div class="imageBigRight">
-            <img src="assets/img/buckinghamPalace.jpg" alt="">
-            <h4 class="imageText">Experience royal traditions, ceremonies, and elegance at Britain's most famous palace.</h4>
+            <img src="assets/img/buckinghamPalace.jpg" alt="Image of Buckingham Palace">
+            <h3 class="imageText">Experience royal traditions, ceremonies, and elegance at Britain's most famous palace.</h3>
         </div>
         
         <div class="imageSmall">
-            <img src="assets/img/londonEye.jpg" alt="">
-            <h4 class="imageText">Sear above London's iconic skyline.</h4>
+            <img src="assets/img/londonEye.jpg" alt="Image of London Eye">
+            <h3 class="imageText">Sear above London's iconic skyline.</h3>
         </div>
         
         <div class="imageSmall">
-            <img src="assets/img/londonUnderground.jpg" alt="">
-            <h4 class="imageText">Navigate London beneath the streets.</h4>
+            <img src="assets/img/londonUnderground.jpg" alt="Image of London Underground station sign">
+            <h3 class="imageText">Navigate London beneath the streets.</h3>
         </div>
     </div>
     
-    <a href="#" id="ammenities"></a>
-    <div class="headingSection">
-        <h1 class="heading">Ammenities</h1>
-        <p class="subheading">Enjoy premium amenities including an indoor spa, fitness center, and indoor pool, designed for relaxation, wellness, and comfort throughout your stay.</p>
-    </div>
+    <a href="#" id="amenities"></a>
+    <h2 class="heading">Amenities</h2>
+    <p class="subheading">Enjoy premium amenities including an indoor spa, fitness center, and indoor pool, designed for relaxation, wellness, and comfort throughout your stay.</p>
         
-    <div id="regionAmmenities">
-        <div class="ammenitiesContainer">
+    <div id="regionAmenities">
+        <div class="amenitiesContainer">
             <img src="assets/img/spa.jpg" alt="Spa Image" />
             <h3>Spa</h3>
             <hr />
             <p>Indulge in ultimate relaxation at our indoor spa, where soothing treatments and tranquil surroundings help you unwind and rejuvenate.</p>
         </div>
         
-        <div class="ammenitiesContainer">
+        <div class="amenitiesContainer">
             <img src="assets/img/gym.jpg" alt="GYM Image" />
             <h3>Gym & Fitness</h3>
             <hr />
             <p>Stay active during your stay in our fully equipped fitness center, featuring modern cardio and strength-training equipment for all levels.</p>
         </div>
         
-        <div class="ammenitiesContainer">
+        <div class="amenitiesContainer">
             <img src="assets/img/pool.jpg" alt="Pool Image" />
             <h3>Indoor Pool</h3>
             <hr />
@@ -151,7 +153,7 @@
                 <ul id="sclMedia">
                     <li><a href="https://www.instagram.com/" class="sclMedia"><span class="fa-brands fa-instagram sclMediaSpan"></span></a></li>
                     <li><a href="https://www.facebook.com/" class="sclMedia"><span class="fa-brands fa-facebook-f sclMediaSpan"></span></a></li>
-                    <li><a href="https://www.x.com/" class="sclMedia"><span class="fa-brands fa-x-twitter sclMediaSpan"></span></a></li>
+                    <li><a href="https://x.com/" class="sclMedia"><span class="fa-brands fa-x-twitter sclMediaSpan"></span></a></li>
                 </ul>
             </div>
             <div class="footerContainer">
@@ -159,14 +161,14 @@
                     <li><a href="#" >Back to top</a></li>
                     <li><a href="#rooms" >Rooms</a></li>
                     <li><a href="#gallery" >Gallery</a></li>
-                    <li><a href="#ammenities" >Ammenities</a></li>
+                    <li><a href="#amenities" >Amenities</a></li>
                 </ul>
             </div>
         </div>
 
         <hr />
 
-        <h1 id="footerText">LUMINA</h1>
+        <h3 id="footerText">LUMINA</h3>
     </div>
 </body>
 </html>
