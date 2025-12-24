@@ -72,6 +72,9 @@ h1, h2, h3, .roomHeading{
     font-weight: bold;
 }
 
+#headerHr{
+    margin: 0px 200px;
+}
 
 #hero {
     height: 730px; 
