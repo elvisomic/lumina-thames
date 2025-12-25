@@ -396,7 +396,7 @@ h1, h2, h3{
 /* Author page */
 
 #authorRegion, #roomRegion{
-    padding: 20px 200px 85px 200px;
+    padding: 60px 200px 85px 200px;
 }
 
 #leftAuthor{
@@ -408,7 +408,7 @@ h1, h2, h3{
     width: 80%;
     object-fit: cover;
     margin: 20px 0px;
-    border-radius: 12px;
+    border-radius: 12px 12px 45% 12px;
 }
 
 #authorHeading{
@@ -486,7 +486,7 @@ h1, h2, h3{
 /* Booking - booking.html */
 
 #bookingSection{
-    padding: 40px 200px;
+    padding: 80px 200px;
     display: flex;
     justify-content: space-between;
 }
