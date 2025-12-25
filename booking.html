@@ -34,14 +34,54 @@
 
     <div id="bookingSection">
         <div id="bookingLeft">
-
+            <h2 id="bookingHeading">Book your stay</h2>
+            <hr id="hrBook" />
+            <p id="bookingText">Experience the comfort and elegance of Lumina Thames Hotel. Whether you're visiting for business or leisure, our rooms offer a perfect blend of luxury and convenience in the heart of Central London.</p>
+            <p id="bookingText">Booking your stay is simple. Fill out the form on the right with your details, select your preferred room type, and one of our team members will confirm your reservation promptly.</p>
+            <p id="bookingText">Enjoy exclusive amenities and personalized service during your stay. From modern facilities to attentive staff, every detail is designed to make your visit memorable and relaxing.</p>
         </div>
         <div id="bookingForm">
-
+            <form action="" method="post">
+                <h2 id="bookingHeading">Stay with us</h2>
+                <div id="formPersonal">
+                    <label for="fullName">Your Full Name</label>
+                    <input type="text" name="fullName" id="fullNameID" placeholder="John Doe" required />
+                    <label for="emailAddress">Your Email Address</label>
+                    <input type="email" name="emailAddress" id="emailAddressID" placeholder="example@domain.com" required  />
+                </div>
+                <div id="formRoomInfo">
+                    <div class="flex-col">
+                        <label for="guestNumber">Number of Guests</label>
+                        <input type="number" name="guestNumber" id="guestNumberID" value="1" />
+                    </div>
+                    <div class="flex-col">
+                        <label for="roomNmbr" id="roomNmbrL">Number of Rooms</label>
+                        <input type="number" name="roomNmbr" id="roomNmbrID" value="1" />
+                    </div>
+                </div>
+                <div id="formRadio">
+                    <label for="roomType">Choose your desired Room Type</label>
+                    <label for="roomStandard" class="radio-button">
+                        <input type="radio" name="roomType" id="roomStandard" value="standard" checked />
+                        Standard Room
+                    </label>
+                    <label for="roomPremium" class="radio-button">
+                        <input type="radio" name="roomType" id="roomPremium" value="premium" />
+                        Premium Room
+                    </label>
+                    <label for="roomSuite" class="radio-button">
+                        <input type="radio" name="roomType" id="roomSuite" value="suite" />
+                        Standard Suite
+                    </label>
+                </div>
+                <input type="submit" value="BOOK NOW" id="submitBTN">
+            </form>
         </div>
     </div>
     
-    <img src="assets/img/banner." alt="bannerImage" />
+    <div id="banner">
+        <img src="assets/img/banner.png" alt="Image of map showing location near london eye and big ben" />
+    </div>
 
     <div class="footer">
         <hr />

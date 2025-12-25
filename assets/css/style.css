@@ -12,7 +12,7 @@ body{
     font-family: "Mulish", sans-serif;
 }
 
-h1, h2, h3, .roomHeading{
+h1, h2, h3{
     font-family: "Epilogue", sans-serif;
     font-weight: 450;
 }
@@ -96,7 +96,7 @@ h1, h2, h3, .roomHeading{
 
 #heroBTN{
     padding:20px 24px;
-    background-color: #DDCEB9;
+    background-color: #ddceb9;
     text-decoration: none;
     color: #ffffff;
     font-weight: 800;
@@ -106,7 +106,7 @@ h1, h2, h3, .roomHeading{
 }
 
 #heroBTN:hover{
-    background-color: #ada190;
+    background-color: #d6c1a3;
 }
 .overlay{
     background-color: rgba(0, 0, 0, 0.5);
@@ -412,6 +412,8 @@ h1, h2, h3, .roomHeading{
 }
 
 #authorHeading{
+    font-size: 2em;
+    font-weight: 600;
     margin: 20px 0px;
 }
 
@@ -419,7 +421,8 @@ h1, h2, h3, .roomHeading{
     margin: 20px 0px;
     width: 50%;
     float:right;
-    font-size: 20px;
+    font-size: 1.25em;
+    opacity: 0.7;
 }
 
 /* Accommodation page - rooms.html */
@@ -458,23 +461,141 @@ h1, h2, h3, .roomHeading{
 
 .roomHeading{
     margin: 20px 0px;
+    font-weight: 600;
 }
 
 .roomText{
     margin: 20px 0px 40px 0px;
+    opacity: 0.7;
 }
 
 .bookBTN{
     text-decoration: none;
     padding: 12px 50px;
     color: #ffffff;
-    background-color: #D4AF37;
-    border-radius: 12px;
-    transition: all 0.2s ease;
+    background-color: #ddceb9;
+    border-radius: 12px;    
+    font-weight: 800;
+    transition: all 0.5s ease;
 }
 
 .bookBTN:hover{
-    background-color: #B8942F;
+    background-color: #d6c1a3;
 }
 
 /* Booking - booking.html */
+
+#bookingSection{
+    padding: 40px 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bookingLeft{
+    width: 45%;
+    font-size: 1.25em;
+}
+
+#bookingHeading{
+    font-weight: 600;
+}
+
+#bookingText{
+    opacity: 0.7;
+    margin: 0px 0px 50px 0px;
+}
+
+#hrBook{
+    margin: 20px 0px;
+}
+
+#banner {
+    padding: 0px 200px 150px 200px;
+}
+
+#banner img{
+    width: 100%;    
+    object-fit: cover;
+    height: 250px;
+    border-radius: 12px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+#bookingForm{
+    width: 400px;
+    height: fit-content;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+#formPersonal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#fullNameID, #emailAddressID{
+    font-size: 18px;
+    margin: 5px 0px;
+    border-radius: 12px;
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+#formRoomInfo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px;
+}
+
+#guestNumberID, #roomNmbrID{
+    font-size: 16px;
+    width: 170px;
+    margin: 5px 0px;
+    border-radius: 12px;
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+#formRadio{
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-button{
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 12px;
+    font-size: 18px;
+    margin: 5px 0px;
+    transition: all 0.5s ease;
+}
+
+.radio-button:hover{
+    background-color: #e4e4e4;
+}
+
+#submitBTN{
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    border: 0px;
+    margin: 12px 0px 0px 0px;
+    font-weight: 550;
+    font-size: 16px;
+    background-color: #ddceb9;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+#submitBTN:hover{
+    background-color: #d6c1a3;
+}
