@@ -51,14 +51,14 @@ h1, h2, h3{
 
 .nav li{
     display: inline;
-    margin: 0px 5px;
+    margin: 0px 10px;
 }
 
 .nav li a{
     position: relative;
     text-decoration: none;
     color: #000000;
-    padding: 4px;
+    padding: 4px 2px;
     font-size: 20px;
 }
 
@@ -87,6 +87,11 @@ h1, h2, h3{
 
 .active {
     font-weight: bold;
+}
+
+.nav li a.active::before{
+    transform: scale3d(1, 1, 1);
+    transition: none;
 }
 
 #headerHr{
